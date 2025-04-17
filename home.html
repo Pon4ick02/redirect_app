@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Your Platform</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url("photo_backgournd.jpg") no-repeat center center fixed;
+
+      background-size: cover;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    }
+
+    .button-container {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; /* Выравнивание по центру */
+    }
+
+    .store-button {
+      width: 200px;
+      height: 60px; /* Уменьшенная высота */
+      transition: transform 0.2s;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .store-button:hover {
+      transform: scale(1.05);
+    }
+
+    /* Общие стили для обоих изображений */
+    .store-img1, .store-img2 {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+
+    /* Специфичные настройки размера для каждого изображения */
+    .store-img1 {
+      width: 95%; /* Немного уменьшаем размер Google Play */
+    }
+
+    .store-img2 {
+      width: 85%; /* Устанавливаем меньший размер для App Store */
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+
+      .store-button {
+        width: 180px;
+        height: 55px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose your platform</h1>
+  <div class="button-container">
+    <a class="store-button" href="https://play.google.com/store/apps/details?id=com.Nightstuff.TheEscapeTogether">
+      <img class="store-img1" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+    </a>
+    <a class="store-button" href="https://apps.apple.com/us/app/the-escape-together/id6469061154">
+      <img class="store-img2" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+    </a>
+  </div>
+</body>
+</html>
