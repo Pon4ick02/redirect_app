@@ -14,7 +14,6 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: url("photo_backgournd.jpg") no-repeat center center fixed;
-
       background-size: cover;
       color: #fff;
       height: 100vh;
@@ -24,6 +23,17 @@
       text-align: center;
       flex-direction: column;
       padding: 20px;
+    }
+
+    .logo-container {
+      margin-bottom: 20px;
+    }
+
+    .logo-img {
+      width: 220px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
 
     h1 {
@@ -36,7 +46,6 @@
       margin-bottom: 40px;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
     }
-
 
     .button-container {
       display: flex;
@@ -88,10 +97,17 @@
         width: 180px;
         height: 55px;
       }
+
+      .logo-img {
+        width: 100px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="logo-container">
+    <img class="logo-img" src="icon1024.png" alt="The Escape: Together Logo">
+  </div>
   <h1>The Escape: Together</h1>
   <h2>Choose your platform</h2>
   <div class="button-container">
